@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salah Khaled | Portfolio</title>
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono for human dev aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dynamic Interactive Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active"><span></span>  Home</a></li>
+        <li><a href="#about"><span></span>  About</a></li>
+        <li><a href="#skills"><span></span>  Skills</a></li>
+        <li><a href="#services"><span></span>  Services</a></li>
+        <li><a href="#education"><span></span>  Education</a></li>
+        <li><a href="#experience"><span></span>  Experience</a></li>
+        <li><a href="#projects"><span></span>  Projects</a></li>
+        <li><a href="#contact"><span></span>  Contact</a></li>
+      </ul>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-left">
+      <div class="badge">
+        <span class="pulse-indicator"></span> Available for new challenges & internships
+      </div>
+
+      <p class="intro">Hey there, I am</p>
+
+      <h1>
+        Salah Khaled <br>
+        <span class="gradient-text">Al-Kenawy</span>
+      </h1>
+
+      <h2>
+        <span class="code-tag"></span>
+        <span id="typing"></span><span class="typing-cursor">_</span>
+        <span class="code-tag"></span>
+      </h2>
+
+      <p class="desc">
+        Computer Science student passionate about crafting clean, high-performance web applications,
+        designing human-centric interfaces, and leveraging modern AI workflows.
+      </p>
+
+      <div class="buttons">
+        <a href="#projects" class="btn primary">
+          <span>Explore Projects</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn secondary">
+          <span>Get in Touch</span>
+          <i class="fa-regular fa-paper-plane"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="image-wrapper">
+        <div class="glow-circle"></div>
+        <div class="glow-circle secondary-glow"></div>
+        <div class="corner-accents"></div>
+        <img src="images/WhatsApp Image 2026-08-30 at 7.16.04 PM.jpeg" alt="Salah Khaled" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80'">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="section-title">
+      <span class="section-tag">01. ABOUT</span>
+      <h2>About Me</h2>
+      <p>A closer look at my background and passion for technology</p>
+    </div>
+
+    <div class="about-container">
+
+      <div class="about-text glass-card">
+
+        <h3>Passionate Developer & AI Enthusiast</h3>
+
+        <p>
+          I am a passionate Computer Science student with a deep curiosity for Artificial Intelligence.
+          I love exploring the mathematical intuition behind machine learning models and putting them into real, deployable code.
+        </p>
+
+        <p>
+          Alongside AI, I have a strong craft in <span class="highlight">Web Development</span> and <span class="highlight">UI/UX Design</span>,
+          where I focus on human ergonomics, seamless micro-interactions, and pixel-precise interfaces.
+        </p>
+
+        <p>
+          I thrive on solving difficult problems, learning emerging technologies daily, and collaborating on meaningful projects that deliver tangible value.
+        </p>
+      </div>
+
+      <div class="about-card glass-card">
+
+        <h3>Why Choose Me?</h3>
+
+        <ul>
+          <li>
+            <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+            <div>
+              <strong>AI Workflow Integration</strong>
+              <p>Harnessing cutting-edge AI tools to boost engineering speed and quality.</p>
+            </div>
+          </li>
+          <li>
+            <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+            <div>
+              <strong>Solid Web Fundamentals</strong>
+              <p>Strong mastery of modern semantic HTML, responsive CSS architecture, and JS.</p>
+            </div>
+          </li>
+          <li>
+            <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+            <div>
+              <strong>User-First Design Mindset</strong>
+              <p>Prioritizing accessibility, ergonomics, and seamless UI/UX flow.</p>
+            </div>
+          </li>
+          <li>
+            <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+            <div>
+              <strong>Agile & Rapid Learner</strong>
+              <p>Quickly adapting to new technology stacks and industry best practices.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+
+    <div class="section-title">
+      <span class="section-tag">02. CAPABILITIES</span>
+      <h2>Skills & Tech Stack</h2>
+      <p>My technical toolkit and hands-on competencies</p>
+    </div>
+
+    <div class="skills-container">
+
+      <!-- UI/UX -->
+      <div class="skill-card glass-card">
+        <div class="skill-header">
+          <div class="skill-icon-box"><i class="fa-solid fa-pen-nib"></i></div>
+          <div>
+            <h3>UI / UX Design</h3>
+            <div class="level">Intermediate Level</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>User Interface Design</span>
+            <span class="percent">75%</span>
+          </div>
+          <div class="bar"><div data-width="75%" style="width: 0%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>User Experience Thinking</span>
+            <span class="percent">70%</span>
+          </div>
+          <div class="bar"><div data-width="70%" style="width: 0%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>Wireframing & Prototyping</span>
+            <span class="percent">65%</span>
+          </div>
+          <div class="bar"><div data-width="65%" style="width: 0%"></div></div>
+        </div>
+
+      </div>
+
+      <!-- Web Development -->
+      <div class="skill-card glass-card">
+        <div class="skill-header">
+          <div class="skill-icon-box"><i class="fa-solid fa-code"></i></div>
+          <div>
+            <h3>Web Development</h3>
+            <div class="level">Strong Foundation</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>HTML5 & Semantics</span>
+            <span class="percent">90%</span>
+          </div>
+          <div class="bar"><div data-width="90%" style="width: 0%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>Modern CSS / Glassmorphism</span>
+            <span class="percent">85%</span>
+          </div>
+          <div class="bar"><div data-width="85%" style="width: 0%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>JavaScript & DOM Manipulation</span>
+            <span class="percent">50%</span>
+          </div>
+          <div class="bar"><div data-width="50%" style="width: 0%"></div></div>
+        </div>
+
+      </div>
+
+      <!-- Generative AI -->
+      <div class="skill-card glass-card">
+        <div class="skill-header">
+          <div class="skill-icon-box"><i class="fa-solid fa-microchip"></i></div>
+          <div>
+            <h3>Generative AI & Data</h3>
+            <div class="level">Advanced in Python / Growing</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>Python (Data & AI Libraries)</span>
+            <span class="percent">90%</span>
+          </div>
+          <div class="bar"><div data-width="90%" style="width: 0%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>Machine Learning Fundamentals</span>
+            <span class="percent">70%</span>
+          </div>
+          <div class="bar"><div data-width="70%" style="width: 0%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>AI Prompting & LLM Engineering</span>
+            <span class="percent">80%</span>
+          </div>
+          <div class="bar"><div data-width="80%" style="width: 0%"></div></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+
+    <div class="section-title">
+      <span class="section-tag">03. SOLUTIONS</span>
+      <h2>Services I Offer</h2>
+      <p>Delivering modern digital experiences, intelligent models, and user-centric designs</p>
+    </div>
+
+    <div class="services-container">
+
+      <!-- Service 1: Web Development -->
+      <div class="service-card glass-card">
+
+        <div class="service-icon-box">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3>Frontend & Web Development</h3>
+        <p>
+          Building high-performance, responsive websites with clean architecture. Crafting fluid layouts,
+          interactive UI components, and accessible digital products using modern HTML5, CSS3, JavaScript, and React.js.
+        </p>
+        <ul class="service-features">
+          <li><i class="fa-solid fa-check"></i> Responsive & Mobile-First Layouts</li>
+          <li><i class="fa-solid fa-check"></i> High-Speed Modern CSS & Glassmorphism</li>
+          <li><i class="fa-solid fa-check"></i> Interactive Frontend Architecture</li>
+        </ul>
+      </div>
+
+      <!-- Service 2: AI & Machine Learning -->
+      <div class="service-card glass-card">
+
+        <div class="service-icon-box">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <h3>AI & Machine Learning Solutions</h3>
+        <p>
+          Designing predictive machine learning models and end-to-end data pipelines in Python.
+          Integrating Generative AI capabilities, prompt engineering, and intelligent features into real applications.
+        </p>
+        <ul class="service-features">
+          <li><i class="fa-solid fa-check"></i> Predictive Model Training & Testing</li>
+          <li><i class="fa-solid fa-check"></i> Data Preprocessing, Cleaning & EDA</li>
+          <li><i class="fa-solid fa-check"></i> GenAI Integration & Prompt Engineering</li>
+        </ul>
+      </div>
+
+      <!-- Service 3: UI/UX Design -->
+      <div class="service-card glass-card">
+
+        <div class="service-icon-box">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <h3>UI/UX & Interactive Design</h3>
+        <p>
+          Transforming concepts into intuitive, user-centered digital interfaces. Conducting user research,
+          creating interactive wireframes, and building comprehensive design systems in Figma.
+        </p>
+        <ul class="service-features">
+          <li><i class="fa-solid fa-check"></i> Wireframing & Interactive Prototyping</li>
+          <li><i class="fa-solid fa-check"></i> Design Systems & Component Libraries</li>
+          <li><i class="fa-solid fa-check"></i> Human-Centered User Journey Mapping</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education" id="education">
+
+    <div class="section-title">
+      <span class="section-tag">04. ACADEMICS</span>
+      <h2>Education Journey</h2>
+      <p>Structured training tracks and university background</p>
+    </div>
+
+    <div class="timeline">
+
+      <!-- DEPI -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="timeline-top">
+            <span class="timeline-badge">DEPI • Microsoft Track</span>
+            <span class="date"><i class="fa-regular fa-calendar"></i> Started 22 July – Ongoing</span>
+          </div>
+          <h3>DEPI – Microsoft Machine Learning Track</h3>
+          <p>
+            Enrolled in the prestigious Digital Egypt Pioneers Initiative (DEPI),
+            following Microsoft’s specialized Machine Learning curriculum to build
+            end-to-end ML models and data pipelines.
+          </p>
+        </div>
+      </div>
+
+      <!-- ITI -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="timeline-top">
+            <span class="timeline-badge">ITI • Intensive Training</span>
+            <span class="date"><i class="fa-regular fa-calendar"></i> September 2026 · 96 Hours</span>
+          </div>
+          <h3>ITI – Machine Learning & Deep Learning Training</h3>
+          <p>
+            Rigorous hands-on training with the Information Technology Institute (ITI)
+            covering supervised/unsupervised learning, neural networks, data preprocessing,
+            and model evaluation on real datasets.
+          </p>
+        </div>
+      </div>
+
+      <!-- University -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="timeline-top">
+            <span class="timeline-badge">Degree • Computer Science</span>
+            <span class="date"><i class="fa-regular fa-calendar"></i> 2022 / 2023 – 2026 / 2027</span>
+          </div>
+          <h3>Higher Institute of Engineering & Commerce (MIHEC)</h3>
+          <p>
+            Pursuing a Bachelor’s degree in Computer Science. Coursework includes Data Structures,
+            Algorithms, Database Architecture, Object-Oriented Programming, and Web Engineering.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+
+    <div class="section-title">
+      <span class="section-tag">05. EXPERIENCE</span>
+      <h2>Practical Experience</h2>
+      <p>Professional training programs and team projects</p>
+    </div>
+
+    <div class="timeline">
+     
+      <!-- NTI -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="timeline-top">
+            <span class="timeline-badge">NTI • Design Program</span>
+            <span class="date"><i class="fa-regular fa-calendar"></i> March 2026 – June 2026</span>
+          </div>
+          <h3>NTI – UI/UX Training Program</h3>
+          <p>
+            Immersive UI/UX training at the National Telecommunication Institute (NTI) focusing
+            on user research methodologies, empathy maps, wireframing, high-fidelity Figma prototypes,
+            and responsive design systems.
+          </p>
+        </div>
+      </div>
+
+      <!-- University Training -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="timeline-top">
+            <span class="timeline-badge">Full-Stack Track</span>
+            <span class="date"><i class="fa-regular fa-calendar"></i> July 2023 – October 2023</span>
+          </div>
+          <h3>University Consultancy Center – Web Development Training</h3>
+          <p>
+            Engaged in full-stack web engineering using React.js on the client side and PHP Laravel
+            for RESTful APIs. Built database migrations, auth systems, and responsive frontends.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+
+    <div class="section-title">
+      <span class="section-tag">06. SHOWCASE</span>
+      <h2>Featured Projects</h2>
+      <p>Real-world applications, team deliverables, and technical training projects</p>
+    </div>
+
+    <div class="projects-container">
+
+      <!-- House Price Prediction -->
+      <div class="project-card glass-card">
+        <div class="project-image-box">
+          <img src="images/house.png" alt="House Price Prediction" onerror="this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80'">
+          <div class="image-overlay"></div>
+          <span class="project-tag-pill">AI / ML</span>
+        </div>
+
+        <div class="project-content">
+          <span class="note">Machine Learning Regression</span>
+          <h3>House Price Prediction Model</h3>
+
+          <p>
+            Machine Learning pipeline designed to predict residential real estate valuations.
+            Includes feature engineering, outlier treatment, and benchmark comparisons among
+            Linear Regression, Decision Trees, and Random Forest (achieving an R² score of 0.88).
+          </p>
+
+          <div class="buttons">
+            <a href="https://github.com/salah286/House-price-app.git" target="_blank" rel="noopener noreferrer" class="btn-card">
+              <span>View Repository</span> <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1 React News (Tesla) -->
+      <div class="project-card glass-card">
+        <div class="project-image-box">
+          <img src="C:/Users/m/.gemini/antigravity/brain/d4b86fa2-5000-4bac-afdc-897f5235f061/.user_uploaded/media_1791133082838.webp" alt="Tesla News Website" onerror="this.src='https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80'">
+          <div class="image-overlay"></div>
+          <span class="project-tag-pill">React.js</span>
+        </div>
+
+        <div class="project-content">
+          <span class="note">Frontend Application</span>
+          <h3>Tesla News Platform (React.js)</h3>
+
+          <p>
+            Dynamic news reader web application built with React.js delivering real-time Tesla news updates.
+            Features responsive layouts, clean component breakdown, and dynamic API data fetching.
+          </p>
+
+          <div class="buttons">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-card">
+              <span>Live Preview</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 Pharmacy Backend -->
+      <div class="project-card glass-card">
+        <div class="project-image-box">
+          <img src="C:/Users/m/.gemini/antigravity/brain/d4b86fa2-5000-4bac-afdc-897f5235f061/.user_uploaded/media_1791133082943.png" alt="Pharmative Pharmacy Backend" onerror="this.src='https://images.unsplash.com/photo-1586015555751-63bb77f4322a?auto=format&fit=crop&w=800&q=80'">
+          <div class="image-overlay"></div>
+          <span class="project-tag-pill">E-Commerce</span>
+        </div>
+
+        <div class="project-content">
+          <span class="note">Backend Architecture</span>
+          <h3>Pharmative E-Commerce Backend</h3>
+
+          <p>
+            Robust e-commerce backend for a digital pharmacy shop. Features product catalog management,
+            shopping cart calculation, order checkout workflow, and secure customer authentication.
+          </p>
+
+          <div class="buttons">
+            <a href="https://github.com/salah286/web.git" target="_blank" rel="noopener noreferrer" class="btn-card">
+              <span>View Source</span> <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Ahl El Sena UI/UX -->
+      <div class="project-card glass-card">
+        <div class="project-image-box">
+          <img src="C:/Users/m/.gemini/antigravity/brain/d4b86fa2-5000-4bac-afdc-897f5235f061/.user_uploaded/media_1791133082903.png" alt="Ahl Elsan3a App" onerror="this.src='https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80'">
+          <div class="image-overlay"></div>
+          <span class="project-tag-pill">UI/UX Case Study</span>
+        </div>
+
+        <div class="project-content">
+          <span class="note">Collaborative Product Design</span>
+          <h3>Ahl Elsan3a Mobile App</h3>
+
+          <p>
+            On-demand handyman platform connecting Egyptian homeowners with verified craftsmen.
+            Created full persona research, user flows, and Figma design system in collaboration with
+            <b>Abdelrahman Rekha, Aya Al-Shaboury, Heba Niyar, and Nour Salah</b>.
+          </p>
+
+          <div class="buttons">
+            <a href="https://www.behance.net/gallery/252601797/Ahl-El-Sen3a-Ai-powered-Home-services-app" target="_blank" rel="noopener noreferrer" class="btn-card">
+              <span>View on Behance</span> <i class="fa-brands fa-behance"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Yalla Match -->
+      <div class="project-card glass-card">
+        <div class="project-image-box">
+          <img src="C:/Users/m/.gemini/antigravity/brain/d4b86fa2-5000-4bac-afdc-897f5235f061/.user_uploaded/media_1791133083129.png" alt="Yalla Match App" onerror="this.src='https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80'">
+          <div class="image-overlay"></div>
+          <span class="project-tag-pill">Mobile UI/UX</span>
+        </div>
+
+        <div class="project-content">
+          <span class="note">Individual UI/UX Project</span>
+          <h3>Yalla Match – Stadium Booking UI</h3>
+
+          <p>
+            Sports booking application crafted to help football players reserve pitches and arrange
+            matches seamlessly. Includes interactive schedule selector, team matching, and smooth onboarding.
+          </p>
+
+          <div class="buttons">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-card">
+              <span>View Design</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 Water Company Management -->
+      <div class="project-card glass-card">
+        <div class="project-image-box">
+          <img src="C:/Users/m/.gemini/antigravity/brain/d4b86fa2-5000-4bac-afdc-897f5235f061/.user_uploaded/media_1791133082883.png" alt="Water Company Management System" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'">
+          <div class="image-overlay"></div>
+          <span class="project-tag-pill">Desktop App</span>
+        </div>
+
+        <div class="project-content">
+          <span class="note">Windows Forms / Enterprise</span>
+          <h3>Water Company Billing & Admin System</h3>
+
+          <p>
+            Complete desktop management software for utility operations: customer meter readings,
+            automated billing calculation, complaint tracking, and administrative reporting dashboards.
+          </p>
+
+          <div class="buttons">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-card">
+              <span>Inspect Overview</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="section-title">
+      <span class="section-tag">07. CONNECT</span>
+      <h2>Let’s Build Something</h2>
+      <p>Have an exciting project, role, or question? My inbox is always open.</p>
+    </div>
+
+    <div class="contact-container">
+
+      <div class="contact-info glass-card">
+
+        <h3>Direct Channels</h3>
+        <p class="contact-intro">Whether you want to discuss AI modeling, web collaboration, or job opportunities, don't hesitate to reach out!</p>
+
+        <div class="info-list">
+          <a href="mailto:salahkhaled300300@gmail.com" class="info-item">
+            <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="label">Email Address</span>
+              <span class="val">salahkhaled300300@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="tel:+201555456995" class="info-item">
+            <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="label">Phone / WhatsApp</span>
+              <span class="val">+20 1555456995</span>
+            </div>
+          </a>
+
+          <div class="info-item">
+            <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span class="label">Current Location</span>
+              <span class="val">Egypt (Open for Remote)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/salah-khaled" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/salah286" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:salahkhaled300300@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-at"></i>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form glass-card" id="contactForm">
+
+        <h3>Drop a Message</h3>
+        <div class="input-group">
+          <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Your Email Address" required>
+        </div>
+        <div class="input-group">
+          <textarea id="message" rows="5" placeholder="How can I help you?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary submit-btn">
+          <span>Transmit Message</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Handcrafted by <span class="highlight">Salah Khaled Al-Kenawy</span> • Built with HTML5, Modern CSS & Vanilla JS • 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
